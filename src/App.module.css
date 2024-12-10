@@ -1,0 +1,112 @@
+.wrapper {
+	display: flex;
+	gap: 4rem;
+	flex-direction: column;
+
+	margin-top: -1.6875rem;
+}
+
+.wrapper form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+
+	padding: 0 1rem;
+}
+
+.wrapper form input {
+	width: 638px;
+	max-width: 638px;
+
+	padding: 1rem;
+
+	background: var(--gray-500);
+	color: var(--gray-100);
+
+	border: 1px solid var(--gray-700);
+	border-radius: 8px;
+}
+
+.wrapper form input::placeholder {
+	color: var(--gray-300);
+}
+
+.wrapper form button {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+
+	background: var(--blue-dark);
+	color: var(--gray-100);
+
+	padding: 1rem;
+	font-size: 0.875rem;
+	font-weight: bold;
+	border: none;
+	border-radius: 8px;
+
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+.wrapper form button:hover {
+	background: var(--blue);
+}
+
+.wrapper form button svg {
+	height: 1rem;
+	width: 1rem;
+}
+
+.tasks {
+	margin: 0 1rem;
+}
+
+.tasks header {
+	max-width: 736px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	margin: 0 auto 1.5rem;
+}
+
+.createdTasks,
+.concludedTasks {
+	display: flex;
+	flex-direction: row;
+	gap: 0.5rem;
+}
+
+.createdTasks p {
+	color: var(--blue);
+
+	font-size: 0.875rem;
+	font-weight: bold;
+}
+
+.concludedTasks p {
+	color: var(--purple);
+
+	font-size: 0.875rem;
+	font-weight: bold;
+}
+
+.counter {
+	color: var(--gray-200);
+	background: var(--gray-400);
+	border-radius: 999px;
+
+	font-size: 0.75rem;
+	font-weight: bold;
+	line-height: normal;
+	padding: 0.125rem 0.5rem;
+}
+
+.tasksList {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
